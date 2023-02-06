@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,500;0,600;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+}
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    --clr-seaweed:#177e89;
+    --clr-green:#084c61;
+    --clr-yellow:#ffc857;
+    --clr-red:#db3a34;
+    --clr-jet:#323031;
+    --clr-white:#fffafa;
+    --clr-black:#383838;
+    --box-shadow:0px 22px 12px rgba(0,0,0,0.15);
+
+}
+/* global css */
+
+img{
+    width:100%;
+    height:auto
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--clr-green); 
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./img);
+}
+
+.card{
+    width: 30rem;;
+    margin:0 auto;
+    background-color:rgb(87, 86, 86);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#c2c2bb;
+}
+
+.desc{
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight:600 ;
+    color:black;
+}
+
+.random-guess{
+    width:8rem;
+    margin:0 auto;
+    height: 3rem;
+    border:2px solid var(--clr-seaweed);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    background-color: orchid;
+    color: red;
+
+}
+
+.user-input{
+padding-top: 1rem;
+padding: 0.75rem 1.25rem;
+border-radius: 10px;
+font-size: 1.25rem;
+font-weight:900 ;
+border: none;
+}
+
+.btn-submit{
+    width:63%;
+    padding: 0.75rem 1.25rem;
+    background-color: blue;
+    color: var(--clr-white);
+    border:2px solid blue;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 900;
+    /*cursor: pointer;*/
+}
+
+.error-message{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgba(229, 92, 92, 0.44);
+    display: none;
+}
+
+.type{
+    padding-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:1rem;
+}
+button{
+    cursor: pointer;
+}
+
+@media screen and (min-width:375px){
+.card{
+    width:75%;
+    height: auto;
+}
+
+.title{
+    font-size: 1.2rem;
+}
+
+.desc{
+    font-size: 1.15rem;
+}
+
+.user-input{
+    width:12rem;
+    font-size:0.95rem ;
+
+} 
+
+.btn-submit{
+    padding: 0.50rem 1rem;
+    width:12rem;
+}
+
+.random-guess{
+    width:6rem;
+    padding: 1rem;
+ }
+}
